@@ -1,0 +1,6 @@
+</pre><hr>Initialisation<br><pre>
+
+/usr/local/fsl/bin/fslmaths /home/nouran/sbme/3.2/fmri/Data/sub-01/func/sub-01_task-flanker_run-1_bold prefiltered_func_data -odt float
+Total original volumes = 146
+
+/usr/local/fsl/bin/fslroi prefiltered_func_data example_func 73 1

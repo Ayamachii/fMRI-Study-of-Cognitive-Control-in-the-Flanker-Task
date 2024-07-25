@@ -1,0 +1,57 @@
+
+/bin/cp /tmp/feat_4k14w3x9.fsf design.fsf
+
+/usr/local/fsl/bin/feat_model design
+
+mkdir .files;cp /usr/local/fsl/doc/fsl.css .files;cp -r /usr/local/fsl/doc/images .files/images
+
+/usr/local/fsl/bin/fsl_sub -T 60 -l logs -N feat2_pre   /usr/local/fsl/bin/feat /home/nouran/sbme/3.2/fmri/Data/second_level.gfeat/design.fsf -D /home/nouran/sbme/3.2/fmri/Data/second_level.gfeat -gfeatprep
+3909
+
+/usr/local/fsl/bin/fsl_sub -T 60 -l logs -N feat3a_flame -j 3909  /usr/local/fsl/bin/feat /home/nouran/sbme/3.2/fmri/Data/second_level.gfeat/cope1.feat/design.fsf -D /home/nouran/sbme/3.2/fmri/Data/second_level.gfeat/cope1.feat -I 1 -flame1
+6270
+
+/usr/local/fsl/bin/fsl_sub -T 60 -l logs -N feat3b_flame -j 6270 -t ./.flame
+6555
+
+/usr/local/fsl/bin/fsl_sub -T 60 -l logs -N feat3c_flame -j 6555  /usr/local/fsl/bin/feat /home/nouran/sbme/3.2/fmri/Data/second_level.gfeat/cope1.feat/design.fsf -D /home/nouran/sbme/3.2/fmri/Data/second_level.gfeat/cope1.feat -flame3
+6636
+
+/usr/local/fsl/bin/fsl_sub -T 60 -l logs -N feat4_post -j 6636  /usr/local/fsl/bin/feat /home/nouran/sbme/3.2/fmri/Data/second_level.gfeat/cope1.feat/design.fsf -D /home/nouran/sbme/3.2/fmri/Data/second_level.gfeat/cope1.feat -poststats 1
+6705
+
+/usr/local/fsl/bin/fsl_sub -T 1 -l logs -N feat5_stop -j 6705  /usr/local/fsl/bin/feat /home/nouran/sbme/3.2/fmri/Data/second_level.gfeat/cope1.feat/design.fsf -D /home/nouran/sbme/3.2/fmri/Data/second_level.gfeat/cope1.feat -stop
+7371
+
+/usr/local/fsl/bin/fsl_sub -T 60 -l logs -N feat3a_flame -j 3909  /usr/local/fsl/bin/feat /home/nouran/sbme/3.2/fmri/Data/second_level.gfeat/cope2.feat/design.fsf -D /home/nouran/sbme/3.2/fmri/Data/second_level.gfeat/cope2.feat -I 2 -flame1
+7559
+
+/usr/local/fsl/bin/fsl_sub -T 60 -l logs -N feat3b_flame -j 7559 -t ./.flame
+7829
+
+/usr/local/fsl/bin/fsl_sub -T 60 -l logs -N feat3c_flame -j 7829  /usr/local/fsl/bin/feat /home/nouran/sbme/3.2/fmri/Data/second_level.gfeat/cope2.feat/design.fsf -D /home/nouran/sbme/3.2/fmri/Data/second_level.gfeat/cope2.feat -flame3
+7914
+
+/usr/local/fsl/bin/fsl_sub -T 60 -l logs -N feat4_post -j 7914  /usr/local/fsl/bin/feat /home/nouran/sbme/3.2/fmri/Data/second_level.gfeat/cope2.feat/design.fsf -D /home/nouran/sbme/3.2/fmri/Data/second_level.gfeat/cope2.feat -poststats 1
+7979
+
+/usr/local/fsl/bin/fsl_sub -T 1 -l logs -N feat5_stop -j 7979  /usr/local/fsl/bin/feat /home/nouran/sbme/3.2/fmri/Data/second_level.gfeat/cope2.feat/design.fsf -D /home/nouran/sbme/3.2/fmri/Data/second_level.gfeat/cope2.feat -stop
+8632
+
+/usr/local/fsl/bin/fsl_sub -T 60 -l logs -N feat3a_flame -j 3909  /usr/local/fsl/bin/feat /home/nouran/sbme/3.2/fmri/Data/second_level.gfeat/cope3.feat/design.fsf -D /home/nouran/sbme/3.2/fmri/Data/second_level.gfeat/cope3.feat -I 3 -flame1
+8808
+
+/usr/local/fsl/bin/fsl_sub -T 60 -l logs -N feat3b_flame -j 8808 -t ./.flame
+9056
+
+/usr/local/fsl/bin/fsl_sub -T 60 -l logs -N feat3c_flame -j 9056  /usr/local/fsl/bin/feat /home/nouran/sbme/3.2/fmri/Data/second_level.gfeat/cope3.feat/design.fsf -D /home/nouran/sbme/3.2/fmri/Data/second_level.gfeat/cope3.feat -flame3
+9178
+
+/usr/local/fsl/bin/fsl_sub -T 60 -l logs -N feat4_post -j 9178  /usr/local/fsl/bin/feat /home/nouran/sbme/3.2/fmri/Data/second_level.gfeat/cope3.feat/design.fsf -D /home/nouran/sbme/3.2/fmri/Data/second_level.gfeat/cope3.feat -poststats 1
+9225
+
+/usr/local/fsl/bin/fsl_sub -T 1 -l logs -N feat5_stop -j 9225  /usr/local/fsl/bin/feat /home/nouran/sbme/3.2/fmri/Data/second_level.gfeat/cope3.feat/design.fsf -D /home/nouran/sbme/3.2/fmri/Data/second_level.gfeat/cope3.feat -stop
+9848
+
+/usr/local/fsl/bin/fsl_sub -T 1 -l logs -N feat5_stop -j 7371,8632,9848  /usr/local/fsl/bin/feat /home/nouran/sbme/3.2/fmri/Data/second_level.gfeat/cope3.feat/design.fsf -D /home/nouran/sbme/3.2/fmri/Data/second_level.gfeat -stop
+10006

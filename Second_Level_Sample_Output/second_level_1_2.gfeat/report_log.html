@@ -1,0 +1,181 @@
+<HTML><HEAD>
+<!--refreshstart-->
+
+<!--refreshstop-->
+<link REL=stylesheet TYPE=text/css href=.files/fsl.css>
+<TITLE>FSL</TITLE></HEAD><BODY><OBJECT data=report.html></OBJECT>
+<h2>Progress Report / Log</h2>
+Started at Fri May 10 12:14:32 AM EEST 2024<p>
+Feat main script<br><pre>
+
+/bin/cp /tmp/feat_4k14w3x9.fsf design.fsf
+
+/usr/local/fsl/bin/feat_model design
+
+mkdir .files;cp /usr/local/fsl/doc/fsl.css .files;cp -r /usr/local/fsl/doc/images .files/images
+
+/usr/local/fsl/bin/fsl_sub -T 60 -l logs -N feat2_pre   /usr/local/fsl/bin/feat /home/nouran/sbme/3.2/fmri/Data/second_level.gfeat/design.fsf -D /home/nouran/sbme/3.2/fmri/Data/second_level.gfeat -gfeatprep
+3909
+
+/usr/local/fsl/bin/fsl_sub -T 60 -l logs -N feat3a_flame -j 3909  /usr/local/fsl/bin/feat /home/nouran/sbme/3.2/fmri/Data/second_level.gfeat/cope1.feat/design.fsf -D /home/nouran/sbme/3.2/fmri/Data/second_level.gfeat/cope1.feat -I 1 -flame1
+6270
+
+/usr/local/fsl/bin/fsl_sub -T 60 -l logs -N feat3b_flame -j 6270 -t ./.flame
+6555
+
+/usr/local/fsl/bin/fsl_sub -T 60 -l logs -N feat3c_flame -j 6555  /usr/local/fsl/bin/feat /home/nouran/sbme/3.2/fmri/Data/second_level.gfeat/cope1.feat/design.fsf -D /home/nouran/sbme/3.2/fmri/Data/second_level.gfeat/cope1.feat -flame3
+6636
+
+/usr/local/fsl/bin/fsl_sub -T 60 -l logs -N feat4_post -j 6636  /usr/local/fsl/bin/feat /home/nouran/sbme/3.2/fmri/Data/second_level.gfeat/cope1.feat/design.fsf -D /home/nouran/sbme/3.2/fmri/Data/second_level.gfeat/cope1.feat -poststats 1
+6705
+
+/usr/local/fsl/bin/fsl_sub -T 1 -l logs -N feat5_stop -j 6705  /usr/local/fsl/bin/feat /home/nouran/sbme/3.2/fmri/Data/second_level.gfeat/cope1.feat/design.fsf -D /home/nouran/sbme/3.2/fmri/Data/second_level.gfeat/cope1.feat -stop
+7371
+
+/usr/local/fsl/bin/fsl_sub -T 60 -l logs -N feat3a_flame -j 3909  /usr/local/fsl/bin/feat /home/nouran/sbme/3.2/fmri/Data/second_level.gfeat/cope2.feat/design.fsf -D /home/nouran/sbme/3.2/fmri/Data/second_level.gfeat/cope2.feat -I 2 -flame1
+7559
+
+/usr/local/fsl/bin/fsl_sub -T 60 -l logs -N feat3b_flame -j 7559 -t ./.flame
+7829
+
+/usr/local/fsl/bin/fsl_sub -T 60 -l logs -N feat3c_flame -j 7829  /usr/local/fsl/bin/feat /home/nouran/sbme/3.2/fmri/Data/second_level.gfeat/cope2.feat/design.fsf -D /home/nouran/sbme/3.2/fmri/Data/second_level.gfeat/cope2.feat -flame3
+7914
+
+/usr/local/fsl/bin/fsl_sub -T 60 -l logs -N feat4_post -j 7914  /usr/local/fsl/bin/feat /home/nouran/sbme/3.2/fmri/Data/second_level.gfeat/cope2.feat/design.fsf -D /home/nouran/sbme/3.2/fmri/Data/second_level.gfeat/cope2.feat -poststats 1
+7979
+
+/usr/local/fsl/bin/fsl_sub -T 1 -l logs -N feat5_stop -j 7979  /usr/local/fsl/bin/feat /home/nouran/sbme/3.2/fmri/Data/second_level.gfeat/cope2.feat/design.fsf -D /home/nouran/sbme/3.2/fmri/Data/second_level.gfeat/cope2.feat -stop
+8632
+
+/usr/local/fsl/bin/fsl_sub -T 60 -l logs -N feat3a_flame -j 3909  /usr/local/fsl/bin/feat /home/nouran/sbme/3.2/fmri/Data/second_level.gfeat/cope3.feat/design.fsf -D /home/nouran/sbme/3.2/fmri/Data/second_level.gfeat/cope3.feat -I 3 -flame1
+8808
+
+/usr/local/fsl/bin/fsl_sub -T 60 -l logs -N feat3b_flame -j 8808 -t ./.flame
+9056
+
+/usr/local/fsl/bin/fsl_sub -T 60 -l logs -N feat3c_flame -j 9056  /usr/local/fsl/bin/feat /home/nouran/sbme/3.2/fmri/Data/second_level.gfeat/cope3.feat/design.fsf -D /home/nouran/sbme/3.2/fmri/Data/second_level.gfeat/cope3.feat -flame3
+9178
+
+/usr/local/fsl/bin/fsl_sub -T 60 -l logs -N feat4_post -j 9178  /usr/local/fsl/bin/feat /home/nouran/sbme/3.2/fmri/Data/second_level.gfeat/cope3.feat/design.fsf -D /home/nouran/sbme/3.2/fmri/Data/second_level.gfeat/cope3.feat -poststats 1
+9225
+
+/usr/local/fsl/bin/fsl_sub -T 1 -l logs -N feat5_stop -j 9225  /usr/local/fsl/bin/feat /home/nouran/sbme/3.2/fmri/Data/second_level.gfeat/cope3.feat/design.fsf -D /home/nouran/sbme/3.2/fmri/Data/second_level.gfeat/cope3.feat -stop
+9848
+
+/usr/local/fsl/bin/fsl_sub -T 1 -l logs -N feat5_stop -j 7371,8632,9848  /usr/local/fsl/bin/feat /home/nouran/sbme/3.2/fmri/Data/second_level.gfeat/cope3.feat/design.fsf -D /home/nouran/sbme/3.2/fmri/Data/second_level.gfeat -stop
+</pre><hr>Higher-level input files preparation<br><pre>
+
+/usr/local/fsl/bin/featregapply /home/nouran/sbme/3.2/fmri/Data/sub-01/run-01+.feat
+
+/usr/local/fsl/bin/featregapply /home/nouran/sbme/3.2/fmri/Data/sub-01/run-02.feat
+
+/usr/local/fsl/bin/featregapply /home/nouran/sbme/3.2/fmri/Data/sub-02/run-01.feat
+
+/usr/local/fsl/bin/featregapply /home/nouran/sbme/3.2/fmri/Data/sub-02/run-02.feat
+
+/usr/local/fsl/bin/fslmerge -t bg_image  /home/nouran/sbme/3.2/fmri/Data/sub-01/run-01+.feat/reg_standard/reg/highres /home/nouran/sbme/3.2/fmri/Data/sub-01/run-02.feat/reg_standard/reg/highres /home/nouran/sbme/3.2/fmri/Data/sub-02/run-01.feat/reg_standard/reg/highres /home/nouran/sbme/3.2/fmri/Data/sub-02/run-02.feat/reg_standard/reg/highres
+
+/usr/local/fsl/bin/fslmaths bg_image -inm 1000 -Tmean bg_image -odt float
+
+/usr/local/fsl/bin/fslmerge -t mask  /home/nouran/sbme/3.2/fmri/Data/sub-01/run-01+.feat/reg_standard/mask /home/nouran/sbme/3.2/fmri/Data/sub-01/run-02.feat/reg_standard/mask /home/nouran/sbme/3.2/fmri/Data/sub-02/run-01.feat/reg_standard/mask /home/nouran/sbme/3.2/fmri/Data/sub-02/run-02.feat/reg_standard/mask
+
+mkdir -p inputreg
+
+/usr/local/fsl/bin/fslmaths ../mask -mul 4 -Tmean masksum -odt short
+
+/usr/local/fsl/bin/fslmaths masksum -thr 4 -add masksum masksum
+
+/usr/local/fsl/bin/overlay 0 0 -c ../bg_image -a masksum 0.9 8 masksum_overlay
+
+/usr/local/fsl/bin/slicer masksum_overlay -S 2 750 masksum_overlay.png
+
+/usr/local/fsl/bin/fslmaths masksum -mul 0 maskunique
+
+/usr/local/fsl/bin/fslmaths /home/nouran/sbme/3.2/fmri/Data/sub-01/run-01+.feat/reg_standard/mask -mul -1 -add 1 -mul 1 -add maskunique maskunique
+
+/usr/local/fsl/bin/fslmaths /home/nouran/sbme/3.2/fmri/Data/sub-01/run-02.feat/reg_standard/mask -mul -1 -add 1 -mul 2 -add maskunique maskunique
+
+/usr/local/fsl/bin/fslmaths /home/nouran/sbme/3.2/fmri/Data/sub-02/run-01.feat/reg_standard/mask -mul -1 -add 1 -mul 3 -add maskunique maskunique
+
+/usr/local/fsl/bin/fslmaths /home/nouran/sbme/3.2/fmri/Data/sub-02/run-02.feat/reg_standard/mask -mul -1 -add 1 -mul 4 -add maskunique maskunique
+
+/usr/local/fsl/bin/fslmaths masksum -thr 3 -uthr 3 -bin -mul maskunique maskunique
+
+/usr/local/fsl/bin/overlay 0 0 ../bg_image -a maskunique 0.9 4 maskunique_overlay
+
+/usr/local/fsl/bin/slicer maskunique_overlay -S 2 750 maskunique_overlay.png
+
+/bin/cp /usr/local/fsl/etc/luts/ramp.gif .ramp.gif
+
+/usr/local/fsl/bin/fslmaths mask -Tmin mask
+
+/usr/local/fsl/bin/fslmerge -t mean_func  /home/nouran/sbme/3.2/fmri/Data/sub-01/run-01+.feat/reg_standard/mean_func /home/nouran/sbme/3.2/fmri/Data/sub-01/run-02.feat/reg_standard/mean_func /home/nouran/sbme/3.2/fmri/Data/sub-02/run-01.feat/reg_standard/mean_func /home/nouran/sbme/3.2/fmri/Data/sub-02/run-02.feat/reg_standard/mean_func
+
+/usr/local/fsl/bin/fslmaths mean_func -Tmean mean_func
+
+/usr/local/fsl/bin/fslmerge -t cope1  /home/nouran/sbme/3.2/fmri/Data/sub-01/run-01+.feat/reg_standard/stats/cope1 /home/nouran/sbme/3.2/fmri/Data/sub-01/run-02.feat/reg_standard/stats/cope1 /home/nouran/sbme/3.2/fmri/Data/sub-02/run-01.feat/reg_standard/stats/cope1 /home/nouran/sbme/3.2/fmri/Data/sub-02/run-02.feat/reg_standard/stats/cope1
+
+/usr/local/fsl/bin/fslmaths cope1 -mas mask cope1
+
+printf '0.298482475 ' >> design.lcon
+
+/usr/local/fsl/bin/fslmerge -t varcope1  /home/nouran/sbme/3.2/fmri/Data/sub-01/run-01+.feat/reg_standard/stats/varcope1 /home/nouran/sbme/3.2/fmri/Data/sub-01/run-02.feat/reg_standard/stats/varcope1 /home/nouran/sbme/3.2/fmri/Data/sub-02/run-01.feat/reg_standard/stats/varcope1 /home/nouran/sbme/3.2/fmri/Data/sub-02/run-02.feat/reg_standard/stats/varcope1
+
+/usr/local/fsl/bin/fslmaths varcope1 -mas mask varcope1
+
+/usr/local/fsl/bin/fslmaths /home/nouran/sbme/3.2/fmri/Data/sub-01/run-01+.feat/reg_standard/stats/cope1 -mul 0 -add 143   /home/nouran/sbme/3.2/fmri/Data/sub-01/run-01+.feat/reg_standard/stats/FEtdof_t1
+
+/usr/local/fsl/bin/fslmaths /home/nouran/sbme/3.2/fmri/Data/sub-01/run-02.feat/reg_standard/stats/cope1 -mul 0 -add 143   /home/nouran/sbme/3.2/fmri/Data/sub-01/run-02.feat/reg_standard/stats/FEtdof_t1
+
+/usr/local/fsl/bin/fslmaths /home/nouran/sbme/3.2/fmri/Data/sub-02/run-01.feat/reg_standard/stats/cope1 -mul 0 -add 143   /home/nouran/sbme/3.2/fmri/Data/sub-02/run-01.feat/reg_standard/stats/FEtdof_t1
+
+/usr/local/fsl/bin/fslmaths /home/nouran/sbme/3.2/fmri/Data/sub-02/run-02.feat/reg_standard/stats/cope1 -mul 0 -add 143   /home/nouran/sbme/3.2/fmri/Data/sub-02/run-02.feat/reg_standard/stats/FEtdof_t1
+
+/usr/local/fsl/bin/fslmerge -t tdof_t1  /home/nouran/sbme/3.2/fmri/Data/sub-01/run-01+.feat/reg_standard/stats/FEtdof_t1 /home/nouran/sbme/3.2/fmri/Data/sub-01/run-02.feat/reg_standard/stats/FEtdof_t1 /home/nouran/sbme/3.2/fmri/Data/sub-02/run-01.feat/reg_standard/stats/FEtdof_t1 /home/nouran/sbme/3.2/fmri/Data/sub-02/run-02.feat/reg_standard/stats/FEtdof_t1
+
+/usr/local/fsl/bin/fslmaths tdof_t1 -mas mask tdof_t1
+
+/usr/local/fsl/bin/fslmerge -t cope2  /home/nouran/sbme/3.2/fmri/Data/sub-01/run-01+.feat/reg_standard/stats/cope2 /home/nouran/sbme/3.2/fmri/Data/sub-01/run-02.feat/reg_standard/stats/cope2 /home/nouran/sbme/3.2/fmri/Data/sub-02/run-01.feat/reg_standard/stats/cope2 /home/nouran/sbme/3.2/fmri/Data/sub-02/run-02.feat/reg_standard/stats/cope2
+
+/usr/local/fsl/bin/fslmaths cope2 -mas mask cope2
+
+printf '0.29839747499999997 ' >> design.lcon
+
+/usr/local/fsl/bin/fslmerge -t varcope2  /home/nouran/sbme/3.2/fmri/Data/sub-01/run-01+.feat/reg_standard/stats/varcope2 /home/nouran/sbme/3.2/fmri/Data/sub-01/run-02.feat/reg_standard/stats/varcope2 /home/nouran/sbme/3.2/fmri/Data/sub-02/run-01.feat/reg_standard/stats/varcope2 /home/nouran/sbme/3.2/fmri/Data/sub-02/run-02.feat/reg_standard/stats/varcope2
+
+/usr/local/fsl/bin/fslmaths varcope2 -mas mask varcope2
+
+/usr/local/fsl/bin/fslmaths /home/nouran/sbme/3.2/fmri/Data/sub-01/run-01+.feat/reg_standard/stats/cope2 -mul 0 -add 143   /home/nouran/sbme/3.2/fmri/Data/sub-01/run-01+.feat/reg_standard/stats/FEtdof_t2
+
+/usr/local/fsl/bin/fslmaths /home/nouran/sbme/3.2/fmri/Data/sub-01/run-02.feat/reg_standard/stats/cope2 -mul 0 -add 143   /home/nouran/sbme/3.2/fmri/Data/sub-01/run-02.feat/reg_standard/stats/FEtdof_t2
+
+/usr/local/fsl/bin/fslmaths /home/nouran/sbme/3.2/fmri/Data/sub-02/run-01.feat/reg_standard/stats/cope2 -mul 0 -add 143   /home/nouran/sbme/3.2/fmri/Data/sub-02/run-01.feat/reg_standard/stats/FEtdof_t2
+
+/usr/local/fsl/bin/fslmaths /home/nouran/sbme/3.2/fmri/Data/sub-02/run-02.feat/reg_standard/stats/cope2 -mul 0 -add 143   /home/nouran/sbme/3.2/fmri/Data/sub-02/run-02.feat/reg_standard/stats/FEtdof_t2
+
+/usr/local/fsl/bin/fslmerge -t tdof_t2  /home/nouran/sbme/3.2/fmri/Data/sub-01/run-01+.feat/reg_standard/stats/FEtdof_t2 /home/nouran/sbme/3.2/fmri/Data/sub-01/run-02.feat/reg_standard/stats/FEtdof_t2 /home/nouran/sbme/3.2/fmri/Data/sub-02/run-01.feat/reg_standard/stats/FEtdof_t2 /home/nouran/sbme/3.2/fmri/Data/sub-02/run-02.feat/reg_standard/stats/FEtdof_t2
+
+/usr/local/fsl/bin/fslmaths tdof_t2 -mas mask tdof_t2
+
+/usr/local/fsl/bin/fslmerge -t cope3  /home/nouran/sbme/3.2/fmri/Data/sub-01/run-01+.feat/reg_standard/stats/cope3 /home/nouran/sbme/3.2/fmri/Data/sub-01/run-02.feat/reg_standard/stats/cope3 /home/nouran/sbme/3.2/fmri/Data/sub-02/run-01.feat/reg_standard/stats/cope3 /home/nouran/sbme/3.2/fmri/Data/sub-02/run-02.feat/reg_standard/stats/cope3
+
+/usr/local/fsl/bin/fslmaths cope3 -mas mask cope3
+
+printf '0.3012332 ' >> design.lcon
+
+/usr/local/fsl/bin/fslmerge -t varcope3  /home/nouran/sbme/3.2/fmri/Data/sub-01/run-01+.feat/reg_standard/stats/varcope3 /home/nouran/sbme/3.2/fmri/Data/sub-01/run-02.feat/reg_standard/stats/varcope3 /home/nouran/sbme/3.2/fmri/Data/sub-02/run-01.feat/reg_standard/stats/varcope3 /home/nouran/sbme/3.2/fmri/Data/sub-02/run-02.feat/reg_standard/stats/varcope3
+
+/usr/local/fsl/bin/fslmaths varcope3 -mas mask varcope3
+
+/usr/local/fsl/bin/fslmaths /home/nouran/sbme/3.2/fmri/Data/sub-01/run-01+.feat/reg_standard/stats/cope3 -mul 0 -add 143   /home/nouran/sbme/3.2/fmri/Data/sub-01/run-01+.feat/reg_standard/stats/FEtdof_t3
+
+/usr/local/fsl/bin/fslmaths /home/nouran/sbme/3.2/fmri/Data/sub-01/run-02.feat/reg_standard/stats/cope3 -mul 0 -add 143   /home/nouran/sbme/3.2/fmri/Data/sub-01/run-02.feat/reg_standard/stats/FEtdof_t3
+
+/usr/local/fsl/bin/fslmaths /home/nouran/sbme/3.2/fmri/Data/sub-02/run-01.feat/reg_standard/stats/cope3 -mul 0 -add 143   /home/nouran/sbme/3.2/fmri/Data/sub-02/run-01.feat/reg_standard/stats/FEtdof_t3
+
+/usr/local/fsl/bin/fslmaths /home/nouran/sbme/3.2/fmri/Data/sub-02/run-02.feat/reg_standard/stats/cope3 -mul 0 -add 143   /home/nouran/sbme/3.2/fmri/Data/sub-02/run-02.feat/reg_standard/stats/FEtdof_t3
+
+/usr/local/fsl/bin/fslmerge -t tdof_t3  /home/nouran/sbme/3.2/fmri/Data/sub-01/run-01+.feat/reg_standard/stats/FEtdof_t3 /home/nouran/sbme/3.2/fmri/Data/sub-01/run-02.feat/reg_standard/stats/FEtdof_t3 /home/nouran/sbme/3.2/fmri/Data/sub-02/run-01.feat/reg_standard/stats/FEtdof_t3 /home/nouran/sbme/3.2/fmri/Data/sub-02/run-02.feat/reg_standard/stats/FEtdof_t3
+
+/usr/local/fsl/bin/fslmaths tdof_t3 -mas mask tdof_t3
+</pre><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></BODY></HTML>

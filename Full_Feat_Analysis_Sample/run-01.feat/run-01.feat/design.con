@@ -1,0 +1,12 @@
+/ContrastName1	cong 
+/ContrastName2	incong 
+/ContrastName3	ingcong-cong 
+/NumWaves	2
+/NumContrasts	3
+/PPheights		2.980792e-01	2.973948e-01	3.012332e-01
+/RequiredEffect		1.247	1.256	1.332
+
+/Matrix
+1.000000e+00 0.000000e+00 
+0.000000e+00 1.000000e+00 
+-1.000000e+00 1.000000e+00 

@@ -1,0 +1,2 @@
+Cluster Index	Z	x	y	z	
+1	4.23	-39.5	-27.3	57.6
